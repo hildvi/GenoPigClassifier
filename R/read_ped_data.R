@@ -8,7 +8,7 @@
 #' are read in.
 #' @import dplyr
 
-#' @return A data frame of  size n x 2m, where n is the number of rows (individuals) 
+#' @return A data frame of size n x 2m, where n is the number of rows (individuals) 
 #' in the ped file, and m is the number of SNP's in the map file 
 #' (23 070 in the PigBreedPrediction_map), use 
 #' head(PigBreedPrediction_map) to view first entries of map file

@@ -2,25 +2,25 @@ Package: GenoPigClassifier
 Title: Classifies crossbreed combination of pigs based on SNP data
 Version: 0.1.0
 Date: 2024-01-09
-Authors@R: c(person("Hilde", "Vinje", "hilde.vinje@nmbu.no", role = c("aut", "cre"),
-         comment = c(ORCID = "0000-0003-0318-0214")),
-         person("Lars Erik", "Gangsei","lars.erik.gangsei@nmbu.no", role = c("aut", "cre"),
-         comment = c(ORCID = "0000-0003-3171-544X")),
-         person("Norwegian University of Life Sciences", role = "cph"))
+Authors@R: c(
+  person("Hilde", "Vinje", email = "hilde.vinje@nmbu.no", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-0318-0214")), 
+  person("Lars Erik", "Gangsei", email = "lars.gangsei@nmbu.no", role = c("aut"), comment = c(ORCID = "0000-0003-3171-544X")), 
+  person("Norwegian University of Life Sciences", role = "cph"))
 Description: bla bla.
 License: GPL 3
 URL: https://github.com/hildvi/GenoPigClassifier
-Depends:   
+Depends: 
   R (>= 4.0.0),
-  plsr,
+  pls,
   mvtnorm,
   dplyr
 Encoding: UTF-8
 Language: en-GB
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 Imports:
-  Suggests: 
-  VignetteBuilder: knitr
+Suggests:
+    knitr
+VignetteBuilder: knitr
 Config/testthat/edition: 1
 LazyData: true
