@@ -17,7 +17,7 @@ read in. Negative and other invalid values are ignored. If -1 (default) all rows
 are read in.}
 }
 \value{
-A data frame of  size n x 2m, where n is the number of rows (individuals)
+A data frame of size n x 2m, where n is the number of rows (individuals)
 in the ped file, and m is the number of SNP's in the map file
 (23 070 in the PigBreedPrediction_map), use
 head(PigBreedPrediction_map) to view first entries of map file
