@@ -1,4 +1,4 @@
-#' Function for reading DNA data (GeneSeek 50K (Illumina) SNP chip) from files (.ped or .txt)
+#' Function for transforming DNA data (GeneSeek 50K (Illumina) SNP chip) from nucleobases (A.C,G,T) to 0-1-2 coding
 
 #' @param ped: A data frame of  size n x 2m, where n is the number of rows (individuals) 
 #' in the ped file, and m is the number of SNP's in the map file (23 070 in the PigBreedPrediction_map)
@@ -11,8 +11,12 @@
 #' head(PigBreedPrediction_map) to view first entries of map file. Column names 
 #' according to SNP-names and Rownames according to ID
 #' 
-#' @author  Hilde Brustad, Hilde Vinje & Lars Erik Gangsei
-#' @references Vinje,H.......
+#' @author  Hilde Vinje & Lars Erik Gangsei
+#' @references Vinje H, Brustad HK, Heggli A, Sevillano CA, Van Son M, 
+#' Gangsei LE. Classification of breed combinations for slaughter pigs based 
+#' on genotypes-modeling DNA samples of crossbreeds as fuzzy sets from purebred 
+#' founders. Front Genet. 2023 Dec 4;14:1289130. doi: 10.3389/fgene.2023.1289130. 
+#' PMID: 38116292; PMCID: PMC10729766.
 #' 
 #' @examples
 #' ped <- read_ped_data('data/Ped_example.txt',ID_column = 'ID',nrows = -1)
