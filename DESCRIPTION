@@ -6,7 +6,11 @@ Authors@R: c(
   person("Hilde", "Vinje", email = "hilde.vinje@nmbu.no", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-0318-0214")), 
   person("Lars Erik", "Gangsei", email = "lars.gangsei@nmbu.no", role = c("aut"), comment = c(ORCID = "0000-0003-3171-544X")), 
   person("Norwegian University of Life Sciences", role = "cph"))
-Description: bla bla.
+Description: The package contains functions that effectively and accurately 
+classify crossbreed combinations of pigs based on genomic data. 
+The method is trained on purebred pigs and uses fuzzy classification with the PLS-QDA method
+to classify the crosbreds pig, described in detalis in Vinje et al. (2023). 
+The input is SNP data from crossbreed combination of pigs and the output is classified breed combinations.
 License: GPL 3
 URL: https://github.com/hildvi/GenoPigClassifier
 Depends: 

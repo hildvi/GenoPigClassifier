@@ -29,7 +29,7 @@
 #' @export
 read_ped_data <- function(ped_path,ID_column = NULL,nrows=-1)
   {
-  message('Reading data from txt file is time consuming')
+  message('Reading data from a txt file is time-consuming...')
   ped <- read.table(ped_path,header = TRUE,
                     check.names = FALSE,nrows=nrows)
   names(ped) <- gsub('_a|_b','',names(ped))

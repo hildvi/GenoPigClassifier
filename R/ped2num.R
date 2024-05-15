@@ -1,4 +1,4 @@
-#' Function for transforming DNA data (GeneSeek 50K (Illumina) SNP chip) from nucleobases (A.C,G,T) to 0-1-2 coding
+#' Function for transforming genomic data (GeneSeek 50K (Illumina) SNP chip) from nucleobases (A,C,G,T) to 0-1-2 coding
 
 #' @param ped: A data frame of  size n x 2m, where n is the number of rows (individuals) 
 #' in the ped file, and m is the number of SNP's in the map file (23 070 in the PigBreedPrediction_map)
@@ -20,12 +20,12 @@
 #' 
 #' @examples
 #' ped <- read_ped_data('data/Ped_example.txt',ID_column = 'ID',nrows = -1)
-#' ped012 <- pedTo012_func(ped,na_val = 0)
+#' ped012 <- ped2num(ped,na_val = 0)
 
 
 
 #' @export
-pedTo012_func <- function(ped,na_val = NA)
+ped2num <- function(ped,na_val = NA)
   {
   message('The process is ongoing')
   pedlist <- lapply(split(t(as.matrix(ped)),
